@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter（旧X）",
+  "version": "1.0",
+  "description": "え？ X って何？今はTwitter（旧X）だよね？",
+  "content_scripts": [
+    {
+      "matches": ["*://x.com/*", "*://twitter.com/*"],
+      "js": ["src/main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["tabs"]
+}
